@@ -396,3 +396,63 @@ html {
   top: 50%;
   left: 20px;
 }
+
+/* -- Portfolio Section -- */
+
+.portfolio {
+  padding-top: 100px;
+  text-align: center;
+  background-color: var(--primary-1);
+}
+.section-title-wrapper {
+  max-width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.portfolio__section-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 895px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+.button-black {
+  padding: 8px 72px 7px 69px;
+  background-color: var(--primary-7);
+  cursor: pointer;
+  font-family: "Inter";
+  font-size: 2rem;
+  line-height: 4rem;
+  width: 220px;
+  height: 55px;
+  border: solid 2px var(--border-color);
+  color: var(--primary-5);
+  transition: 0.3s;
+}
+.button-black:hover {
+  background-color: var(--primary-5);
+  color: var(--primary-7);
+}
+.button-black.active {
+  padding: 8px 72px 7px 73px;
+  width: 220px;
+  height: 55px;
+  background-color: var(--primary-5);
+  font-family: "Inter";
+  font-size: 2rem;
+  line-height: 4rem;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  color: var(--primary-7);
+  transition: 0.3s;
+}
+.portfolio__section-imgs {
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
