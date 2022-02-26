@@ -123,6 +123,7 @@ input::-ms-clear {
 
 button {
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 button::-moz-focus-inner {
@@ -666,5 +667,77 @@ input[type="range"]::-webkit-slider-thumb {
   transition: 0.3s;
 }
 .price__section-button:hover {
+  color: #ffffff;
+}
+/* -- Contacts Section -- */
+.contacts {
+  background-image: url(/src/assets/img/contacts-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 700px;
+  background-position: center center;
+}
+.contact-me__section-titel {
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 8rem;
+  margin-bottom: 40px;
+  color: var(--title-section-color);
+}
+.contacts__container {
+  display: flex;
+  justify-content: right;
+  padding-top: 60px;
+  padding-bottom: 195px;
+}
+
+.form__title {
+  text-align: left;
+}
+.form__title:before,
+.form__title:after {
+  display: none;
+}
+
+.form__input {
+  font-family: Inter;
+  color: var(--input-color);
+  font-size: 20px;
+  line-height: 40px;
+  font-style: normal;
+  font-weight: normal;
+  display: block;
+  width: 450px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--input-color);
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.form__input::placeholder {
+  color: var(--input-color);
+  font-size: 20px;
+  line-height: 40px;
+}
+.textarea {
+  resize: none;
+  height: 100px;
+  margin-bottom: 30px;
+}
+.contact-me__section-button {
+  color: #000000;
+  background-color: #bdae82;
+  width: 220px;
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: 400;
+  font-family: Inter;
+  border: 0;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+
+.contact-me__section-button:hover {
   color: #ffffff;
 }
