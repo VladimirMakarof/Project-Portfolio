@@ -66,6 +66,14 @@ a:focus,
 a:active {
   outline: none;
 }
+a {
+  text-decoration: none;
+  color: var(--primary-2);
+}
+
+a:hover {
+  color: var(--hover-link-color);
+}
 
 /*====================
 делаем перечисленные html5 теги, блочными тегами
@@ -158,27 +166,58 @@ html {
 /* =================================== */
 
 /* -- Header Blok -- */
-.header {
-}
+
 .container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  width: 100%;
+  min-width: 280px;
+  padding: 0 20px;
 }
 .header__container {
+  background: url("../assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  height: 910px;
 }
 .header__navigation {
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 160px;
 }
-.header__navigation-logo {
-}
+
 .icon-logo {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: block;
+  fill: var(--primary-2);
 }
-.social-color {
+.icon-logo:hover {
+  fill: #bdae82;
 }
+
 .header__navigation-wrapper {
+  display: flex;
+  margin-right: -11px;
 }
 .header__navigation-items {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
 }
 .header__navigation-item {
+  margin-right: 30px;
 }
 .header__navigation-link {
+  line-height: 5rem;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: var(--primary-2);
 }
 .language-skills {
 }
@@ -191,40 +230,68 @@ html {
 .language-contacts {
 }
 .header__navigation-lang {
+  margin-right: 13px;
+  align-items: center;
+  display: flex;
 }
 .header__navigation-lang-link {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  line-height: 5rem;
+  color: var(--primary-2);
 }
 .active {
 }
-.en {
-}
 .header__navigation-lang-link-en {
-}
-.ru {
+  margin-right: 9px;
 }
 .header__navigation-lang-link-ru {
+  margin-left: 8px;
 }
 .theme-buttons {
 }
 .header-burger {
 }
 .hero {
+  max-width: 417px;
+  margin-left: 60px;
 }
 .header__hero-title {
-}
-.language-hero-title {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 12rem;
+  margin-bottom: 40px;
+  color: var(--primary-2);
 }
 .header__hero-text {
-}
-.language-hero-text {
+  font-family: "Inter";
+  font-size: 2rem;
+  line-height: 4rem;
+  padding-right: 30px;
+  margin-bottom: 25px;
+  margin-top: -30px;
+  color: var(--primary-2);
 }
 .button {
+  width: 220px;
+  height: 55px;
+  background-color: var(--primary-6);
+  font-family: "Inter";
+  font-size: 2rem;
+  line-height: 4rem;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  color: #000000;
+  transition: 0.3s;
+}
+.button:hover {
+  color: #ffffff;
 }
 .bubbly-button {
 }
 .language-hire {
-}
-.** {
 }
 .btn {
 }
