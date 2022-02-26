@@ -601,3 +601,70 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
   box-shadow: none;
 }
+
+/* -- Price Section -- */
+.price {
+  padding-top: 100px;
+}
+.price__section-items-wrapper {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.price__section-item {
+  border: solid 3px #bdae82;
+  margin-bottom: 100px;
+  width: 450px;
+}
+.price__section-titel {
+  line-height: 5.6rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+  font-family: Merriweather;
+  padding: 43px 164px 20px 158px;
+}
+.price__section-titel-gold {
+  padding-left: 192px;
+}
+.price__section-titel-standart {
+  padding-left: 162px;
+}
+.price__section-price {
+  color: #bdae82;
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 4.8rem;
+  text-align: center;
+  padding-bottom: 20px;
+  display: block;
+}
+
+.price__section-list {
+  font-family: Inter;
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price__section-button {
+  color: #000000;
+  background-color: #bdae82;
+  padding: 5px 27px 7px 27px;
+  width: 220px;
+  height: 55px;
+  display: block;
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: 400;
+  font-family: Inter;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  transition: 0.3s;
+}
+.price__section-button:hover {
+  color: #ffffff;
+}
