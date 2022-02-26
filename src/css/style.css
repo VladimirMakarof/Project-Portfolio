@@ -1,1 +1,157 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap");
+
+:root {
+  /*primary*/
+  --primary-1: #000000;
+  --primary-2: #ffffff;
+  --primary-3: #ffffff;
+  --primary-4: #ffffff;
+  --primary-5: #bdae82;
+  --primary-6: #bdae82;
+  --primary-7: #000000;
+
+  --title-section-color: #bdae82;
+  --link-text-color: #ffffff;
+  --hover-link-color: #bdae82;
+  --hover-black-link-color: #000000;
+  --main-text-color: #ffffff;
+  --icon-big-color: #bdae82;
+  --icon-small-color: #ffffff;
+  --hover-icon-small-color: #bdae82;
+  --border-color: #bdae82;
+  --input-color: #bdae82;
+  --burger-color: #ffffff;
+  --background-menu-burger: #000000;
+}
+
+.theme-light {
+  --primary-1: #ffffff;
+  --primary-2: #000000;
+  --primary-3: #bdae82;
+  --primary-4: #000000;
+  --primary-5: #000000;
+  --primary-6: #ffffff;
+  --primary-7: #bdae82;
+}
+
+/*====================
+обнуляем внутренние и внешние отступы + обводку для всех html тегов 
+====================*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*====================
+изменяем ширину блока для удобства верстки
+====================*/
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*====================
+убираем линии обводки некоторых браузеров
+====================*/
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*====================
+делаем перечисленные html5 теги, блочными тегами
+====================*/
+img,
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/*====================
+уравниваем поведение перечисленных тегов для одинакового отображения в разных браузерах 
+====================*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-size: 10px;
+  line-height: 10px;
+  color: var(--primary-4);
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*====================
+просим вложенные теги формы <form></form> наследовать определенное семейство шрифта, так как по умолчанию данные теги не наследуют ни единого семейства шрифтов
+====================*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/*====================
+удаляем некоторые особенности свойственные некоторым браузерам и обнуляем стили маркерованных списков
+====================*/
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*====================
+обнуляем стили заголовков
+====================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Merriweather;
+  font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
