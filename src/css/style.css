@@ -135,6 +135,12 @@ a:visited {
   text-decoration: none;
 }
 
+.svg:hover,
+.svg:active {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -194,9 +200,6 @@ html {
   cursor: pointer;
   display: block;
   fill: var(--primary-2);
-}
-.icon-logo:hover {
-  fill: #bdae82;
 }
 
 .header__navigation-wrapper {
@@ -458,7 +461,9 @@ html {
 }
 
 /* -- Video Section -- */
-
+.video {
+  padding-top: 100px;
+}
 .video__player {
   position: relative;
   display: flex;
@@ -498,7 +503,7 @@ html {
 .play__btn--color {
   height: 150px;
   width: 150px;
-  background-image: url("/src/assets/svg/sprite.svg#play-btn");
+  background-image: url("/src/assets/svg/play-btn.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
