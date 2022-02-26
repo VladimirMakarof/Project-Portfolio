@@ -741,3 +741,104 @@ input[type="range"]::-webkit-slider-thumb {
 .contact-me__section-button:hover {
   color: #ffffff;
 }
+/* -- Footer section -- */
+.footer__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 150px;
+}
+
+.footer__section-social-icons {
+  display: flex;
+  margin-bottom: -2px;
+  width: 188px;
+}
+
+.footer__section-github {
+  width: 182px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__section-rss {
+  font-size: 2rem;
+  line-height: 5rem;
+  font-family: Inter;
+  margin-bottom: 1px;
+  padding-left: 5px;
+}
+
+.footer__section-year {
+  font-size: 2rem;
+  line-height: 5rem;
+  font-family: Inter;
+}
+
+.footer__section-link-github {
+  font-size: 2rem;
+  line-height: 5rem;
+  font-family: Inter;
+  margin-right: 14px;
+}
+.social-color {
+  fill: var(--primary-2);
+}
+.copy-icon {
+  fill: var(--icon-small-color);
+  width: 16px;
+  height: 16px;
+  gap: 20px;
+}
+
+.instagram-icon {
+  cursor: pointer;
+  width: 27px;
+  height: 27px;
+  transition: 0.3s;
+  margin-left: 1px;
+  margin-right: 30px;
+  margin-top: 2px;
+}
+
+.instagram-icon:hover {
+  fill: var(--hover-link-color);
+}
+
+.facebook-icon {
+  cursor: pointer;
+  height: 27px;
+  width: 17px;
+  transition: 0.3s;
+  margin-right: 30px;
+  margin-top: 3px;
+}
+
+.facebook-icon:hover {
+  fill: var(--hover-link-color);
+}
+
+.twitter-icon {
+  cursor: pointer;
+  width: 28px;
+  height: 22px;
+  transition: 0.3s;
+  margin-right: 23px;
+  margin-top: 5px;
+}
+
+.twitter-icon:hover {
+  fill: var(--hover-link-color);
+}
+
+.pinterest-icon {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  transition: 0.3s;
+}
+
+.pinterest-icon:hover {
+  fill: var(--hover-link-color);
+}
