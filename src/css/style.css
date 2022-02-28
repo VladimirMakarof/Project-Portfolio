@@ -302,14 +302,14 @@ body {
 }
 
 .header__container {
-  background: url("../assets/img/bg.jpg");
+  background: url(../assets/img/bg.jpg);
   background-repeat: no-repeat;
   background-position: center 0;
   height: 910px;
   /* width: 100%; */
 }
 .header__container.theme-light {
-  background: url("../assets/img/bg-them.jpg");
+  background: url(../assets/img/bg-them.jpg);
 }
 
 .header__navigation {
@@ -578,7 +578,7 @@ body {
   width: 100%;
   height: 100%;
   max-height: 722px;
-  background-image: url("../assets/img/video-player.jpg");
+  background-image: url(../assets/img/video-player.jpg);
   background-repeat: no-repeat;
   background-size: auto 722px;
   background-position: center center;
@@ -596,7 +596,7 @@ body {
 .play__btn--color {
   height: 150px;
   width: 150px;
-  background-image: url("/src/assets/svg/play-btn.svg");
+  background-image: url(../assets/svg/play-btn.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -631,31 +631,31 @@ body {
 
 .play {
   max-width: 32px;
-  background-image: url("/src/assets/svg/play.svg");
+  background-image: url(../assets/svg/play.svg);
   margin-right: 15px;
 }
 .pause {
-  background-image: url("/src/assets/svg/pause.svg");
+  background-image: url(../assets/svg/pause.svg);
 }
 .volume {
   max-width: 32px;
-  background-image: url("/src/assets/svg/volume.svg");
+  background-image: url(../assets/svg/volume.svg);
   margin-right: 15px;
   margin-left: 15px;
 }
 .mute {
-  background-image: url("/src/assets/svg/mute.svg");
+  background-image: url(../assets/svg/mute.svg);
 }
 .loud {
   opacity: 1;
 }
 .fullscreen {
   max-width: 32px;
-  background-image: url("/src/assets/svg/fullscreen.svg");
+  background-image: url(../assets/svg/fullscreen.svg);
   margin-left: 15px;
 }
 .fullscreen__exit {
-  background-image: url("/src/assets/svg/fullscreen-exit.svg");
+  background-image: url(../assets/svg/fullscreen-exit.svg);
 }
 .video__progress,
 .volume__progress {
@@ -1114,11 +1114,11 @@ input[type="range"]::-webkit-slider-thumb {
 
   .header__container {
     height: 590px;
-    background: url("../assets/img/bg-tablet.jpg");
+    background: url(../assets/img/bg-tablet.jpg);
   }
   .header__container.theme-light {
     height: 590px;
-    background: url("../assets/img/bg-them-min.jpg");
+    background: url(../assets/img/bg-them-min.jpg);
   }
 
   .header__navigation-logo {
