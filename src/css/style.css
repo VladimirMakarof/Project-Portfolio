@@ -842,3 +842,201 @@ input[type="range"]::-webkit-slider-thumb {
 .pinterest-icon:hover {
   fill: var(--hover-link-color);
 }
+@media (max-width: 1439px) {
+  .portfolio__section-buttons {
+    max-width: 450px;
+  }
+  .play__btn--color {
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+  }
+  .price__section-items-wrapper {
+    flex-wrap: wrap;
+  }
+  .form {
+    max-width: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .play__btn--color {
+    height: 75px;
+    width: 75px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header__navigation {
+    margin-bottom: 78px;
+    padding: 20px 21px 20px 20px;
+  }
+  .header__container {
+    height: 590px;
+    background: url("/src/assets/img/bg-tablet.jpg");
+  }
+  .hero {
+    max-width: 417px;
+    margin-left: 60px;
+  }
+  .header__hero-title {
+    font-size: 32px;
+    line-height: 64px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  .header__hero-text {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 33px;
+  }
+  .header__navigation-lang {
+    margin-right: 34px;
+  }
+
+  .header__navigation-lang-link-ru {
+    margin-right: -12px;
+    margin-left: 20px;
+  }
+  .section-title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 71px;
+  }
+
+  .section-title-wrapper,
+  .section__title {
+    min-width: 280px;
+  }
+  .section__title:before {
+    max-width: 55px;
+    right: 5px;
+  }
+  .section__title:after {
+    max-width: 55px;
+    left: 5px;
+  }
+  .skills__section-span-photo {
+    margin-top: 90px;
+  }
+  .skills__section-text {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  .icon-camera {
+    top: 15px;
+    right: 129px;
+  }
+  .skills__section-items {
+    padding: 4px 54px 0px 49px;
+  }
+  .skills__section-span-video {
+    margin-top: 90px;
+  }
+  .icon-video {
+    top: 9px;
+    right: 131px;
+  }
+  .skills__section-span-retouch {
+    margin-top: 130px;
+  }
+
+  .icon-image {
+    top: 27px;
+    right: 128px;
+  }
+  .skills__section-span-audio {
+    margin-top: 130px;
+  }
+  .icon-mic {
+    top: 40px;
+  }
+  .portfolio {
+    padding-top: 163px;
+  }
+  .portfolio__section-buttons {
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 162px;
+    padding-bottom: 55px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .header__hero-button {
+    margin-bottom: 5px;
+  }
+  .portfolio__section-imgs {
+    max-width: 768px;
+    grid-template-columns: 450px;
+  }
+  .video__img {
+    height: 418px;
+    background-image: url("/src/assets/img/video-player-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 420px;
+    background-position: center center;
+  }
+  .price__section-items-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+  .price__section-item {
+    width: 420px;
+  }
+  .price__section-titel {
+    padding-top: 39px;
+    padding-left: 143px;
+  }
+  .price__section-item {
+    margin-bottom: 53px;
+  }
+  .price__section-titel-gold {
+    padding-left: 166px;
+  }
+  .contacts {
+    background-image: url("/src/assets/img/contacts-tablet.jpg");
+    min-height: 600px;
+    margin-top: 28px;
+    justify-content: center;
+  }
+  .contact-me__section-titel {
+    font-size: 3.2rem;
+    line-height: 6.4rem;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+  .form {
+    height: 429px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  .contact-me__section-button {
+    padding-top: 7px;
+    padding-bottom: 8px;
+    margin: 0 auto;
+  }
+  .footer__section {
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 28px;
+  }
+  .footer__section-github {
+    margin-bottom: -21px;
+    margin-left: 10px;
+  }
+  .footer__section-social-icons {
+    width: 188px;
+    height: 50px;
+    align-items: baseline;
+  }
+  .footer__section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
