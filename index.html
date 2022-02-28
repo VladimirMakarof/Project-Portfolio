@@ -24,12 +24,14 @@
   <title>Portfolio</title>
 </head>
 
+
 <body>
+  <div class="overlay"></div>
   <header class="header">
     <div class="container header__container">
       <nav class="header__navigation">
         <a href="#" class="header__navigation-logo">
-          <svg class="icon-logo svg">
+          <svg class="icon-logo social-color">
             <use xlink:href="src/assets/svg/sprite.svg#logo"></use>
           </svg>
         </a>
@@ -62,6 +64,13 @@
           </div>
           <button class="theme-buttons">
 
+            <!-- <svg class="icon-sun theme" data-theme="light">
+               <use xlink:href="src/assets/svg/sprite.svg#sun"></use> -->
+            <!-- </svg> -->
+
+            <!-- <svg class="icon-moon" data-theme="dark">
+              <use xlink:href="src/assets/svg/sprite.svg#moon"></use>
+            </svg> -->
           </button>
           <div class="header-burger">
             <span></span>
@@ -74,16 +83,17 @@
           life together
           with professional
           photographer Alexa Rise</p>
-        <button onclick="window.location.href = '#'" class="button bubbly-button language-hire ** btn btn-animate ">Hire
-          me</button>
+        <button class="btn button bubbly-button language-hire ** btn btn-animate ">Hire me</button>
       </section>
     </div>
   </header>
+
   <main class="main">
     <div class="container">
+
       <section class="skills">
-        <div class="section-title-wrapper">
-          <h2 class="section__title language-skills" id="skills">Skills</h2>
+        <div class="section-title-wrapper h81">
+          <h2 class="section-title language-skills" id="skills">Skills</h2>
         </div>
 
         <div class="skills__section-items">
@@ -129,111 +139,152 @@
           </div>
         </div>
       </section>
-    </div>
 
-    <section class="portfolio">
-      <div class="section-title-wrapper">
-        <h2 class="section__title language-portfolio" id="portfolio">Portfolio</h2>
-      </div>
-      <div class="portfolio__section-buttons">
-        <button class="portfolio-btn header__hero-button button-black language-winter"
-          data-season="winter">Winter</button>
-        <button class="portfolio-btn header__hero-button button-black language-spring"
-          data-season="spring">Spring</button>
-        <button class="portfolio-btn header__hero-button button-black language-summer"
-          data-season="summer">Summer</button>
-        <button class="portfolio-btn header__hero-button button-black active language-autumn"
-          data-season="autumn">Autumn</button>
-      </div>
-      <div class="portfolio__section-imgs">
-        <img src="./src/assets/img/portfolio-img-1.jpg" alt="pic-1" class="portfolio__section-imgs-item">
-        <img src="./src/assets/img/portfolio-img-2.jpg" alt="pic-2" class="portfolio__section-imgs-item">
-        <img src="./src/assets/img/portfolio-img-3.jpg" alt="pic-3" class="portfolio__section-imgs-item">
-        <img src="./src/assets/img/portfolio-img-4.jpg" alt="pic-4" class="portfolio__section-imgs-item">
-        <img src="./src/assets/img/portfolio-img-5.jpg" alt="pic-5" class="portfolio__section-imgs-item">
-        <img src="./src/assets/img/portfolio-img-6.jpg" alt="pic-6" class="portfolio__section-imgs-item">
-      </div>
-    </section>
-
-    <section class="section video" id="video">
-      <div class="container video__container">
+      <section class="portfolio">
         <div class="section-title-wrapper">
-          <h2 class="section__title language-video" id="video">Video</h2>
+          <h2 class="section-title language-portfolio" id="portfolio">Portfolio</h2>
         </div>
-        <div class="video__player player">
-          <div class="video__img"></div>
-          <video class="video__track" src="/src/assets/video/video.mp4"></video>
-          <button class="svg play__btn play__btn--color"></button>
-          <div class="controls">
-            <div class="svg controls__btn play"></div>
-            <input class="controls__btn video__progress " type="range" value="0" min="0" max="100" step="1"
-              name="video">
-            <div class="svg controls__btn volume"></div>
-            <input class="controls__btn volume__progress" type="range" value="50" min="0" max="100" step="1"
-              name="volume">
-            <div class="svg controls__btn fullscreen"></div>
+        <div class="portfolio__section-buttons">
+          <button class="portfolio-btn header__hero-button button-black button language-winter"
+            data-season="winter">Winter</button>
+          <button class="portfolio-btn header__hero-button button-black button language-spring"
+            data-season="spring">Spring</button>
+          <button class="portfolio-btn header__hero-button button-black button language-summer"
+            data-season="summer">Summer</button>
+          <button class="portfolio-btn header__hero-button button-black button active language-autumn"
+            data-season="autumn">Autumn</button>
+        </div>
+        <div class="portfolio__section-imgs">
+          <img src="./src/assets/img/portfolio-img-1.jpg" alt="pic-1" class="portfolio__section-imgs-item">
+          <img src="./src/assets/img/portfolio-img-2.jpg" alt="pic-2" class="portfolio__section-imgs-item">
+          <img src="./src/assets/img/portfolio-img-3.jpg" alt="pic-3" class="portfolio__section-imgs-item">
+          <img src="./src/assets/img/portfolio-img-4.jpg" alt="pic-4" class="portfolio__section-imgs-item">
+          <img src="./src/assets/img/portfolio-img-5.jpg" alt="pic-5" class="portfolio__section-imgs-item">
+          <img src="./src/assets/img/portfolio-img-6.jpg" alt="pic-6" class="portfolio__section-imgs-item">
+        </div>
+      </section>
+
+      <!-- <section class="video">
+        <div class="section-title-wrapper">
+          <h2 class="section-title language-video" id="video">Video</h2>
+        </div>
+        <div class="video__section-video">
+
+          <video class="video__section-content" src="./src/assets/video/video.mp4"
+            poster="./src/assets/img/video-player.jpg"></video>
+
+
+          <div class="video__section-video-btn">
+            <svg class="icon-play-btn">
+              <use xlink:href="src/assets/svg/sprite.svg#play-btn"></use>
+            </svg>
+          </div>
+
+          <div class="video__section-controls">
+
+            <div class="play-icon play"></div>
+            <input type="range" value="0" min="0" max="100" step="1" class="progress progress-bar">
+            <div class="play-icon volume-icon"></div>
+            <input type="range" value="40" min="0" max="100" step="1" class="volume progress-bar">
+          </div>
+
+
+
+
+
+
+        </div>
+      </section> -->
+
+      <section id="video" class="video">
+        <div class="container video__container">
+          <div class="section-title-wrapper">
+            <h2 class="section-title language-video" id="video">Video</h2>
+          </div>
+          <div class="video__player player">
+            <div class="video__img"></div>
+            <video class="video__track" src="/src/assets/video/video.mp4"></video>
+            <button class="svg play__btn play__btn--color"></button>
+            <div class="controls">
+              <div class="svg controls__btn play"></div>
+              <input class="controls__btn video__progress " type="range" value="0" min="0" max="100" step="1"
+                name="video">
+              <div class="svg controls__btn volume"></div>
+              <input class="controls__btn volume__progress" type="range" value="50" min="0" max="100" step="1"
+                name="volume">
+              <div class="svg controls__btn fullscreen"></div>
+            </div>
+          </div>
+      </section>
+
+      <section class="price">
+        <div class="section-title-wrapper">
+          <h2 class="section-title language-price" id="price">Price</h2>
+        </div>
+        <div class="price__section-items-wrapper">
+          <div class="price__section-item">
+            <h2 class="price__section-titel">Standard</h2>
+            <span class="price__section-price">500 $</span>
+            <ul class="price__section-list">
+              <li class="language-price-description-1-span-1">One location</li>
+              <li class="language-price-description-1-span-2">120 photos in color</li>
+              <li class="language-price-description-1-span-3">12 photos in retouch</li>
+              <li class="language-price-description-1-span-4">Readiness 2-3 weeks</li>
+              <li class="language-price-description-1-span-5">Make up, visage</li>
+            </ul>
+            <button class="button btn price__section-button language-order">Order
+              shooting</button>
+          </div>
+          <div class="price__section-item">
+            <h2 class="price__section-titel">Premium</h2>
+            <span class="price__section-price">700 $</span>
+            <ul class="price__section-list">
+              <li class="language-price-description-2-span-1">One or two locations</li>
+              <li class="language-price-description-2-span-2">200 photos in color</li>
+              <li class="language-price-description-2-span-3">20 photos in retouch</li>
+              <li class="language-price-description-2-span-4">Readiness 1-2 weeks</li>
+              <li class="language-price-description-2-span-5">Make up, visage</li>
+            </ul>
+            <button class="button btn price__section-button language-order">Order
+              shooting</button>
+          </div>
+          <div class="price__section-item">
+            <h2 class="price__section-titel price__section-titel-gold">Gold</h2>
+            <span class="price__section-price">1000 $</span>
+            <ul class="price__section-list">
+              <li class="language-price-description-3-span-1">Three locations or more</li>
+              <li class="language-price-description-3-span-2">300 photos in color</li>
+              <li class="language-price-description-3-span-3">50 photos in retouch</li>
+              <li class="language-price-description-3-span-4">Readiness 1 week</li>
+              <li class="language-price-description-3-span-5">Make up, visage, hairstyle</li>
+            </ul>
+            <button class="button btn price__section-button language-order">Order
+              shooting</button>
           </div>
         </div>
-    </section>
-    <section class="price">
-      <div class="section-title-wrapper">
-        <h2 class="section__title language-price" id="price">Price</h2>
-      </div>
-      <div class="price__section-items-wrapper">
-        <div class="price__section-item">
-          <h2 class="price__section-titel price__section-titel-standart">Standart</h2>
-          <span class="price__section-price">500 $</span>
-          <ul class="price__section-list">
-            <li class="language-price-description-1-span-1">One location</li>
-            <li class="language-price-description-1-span-2">120 photos in color</li>
-            <li class="language-price-description-1-span-3">12 photos in retouch</li>
-            <li class="language-price-description-1-span-4">Readiness 2-3 weeks</li>
-            <li class="language-price-description-1-span-5">Make up, visage</li>
-          </ul>
-          <button onclick="window.location.href = '#'" class="price__section-button  ">Order shooting</button>
-        </div>
-        <div class="price__section-item">
-          <h2 class="price__section-titel">Premium</h2>
-          <span class="price__section-price">700 $</span>
-          <ul class="price__section-list">
-            <li class="language-price-description-2-span-1">One or two locations</li>
-            <li class="language-price-description-2-span-2">200 photos in color</li>
-            <li class="language-price-description-2-span-3">20 photos in retouch</li>
-            <li class="language-price-description-2-span-4">Readiness 1-2 weeks</li>
-            <li class="language-price-description-2-span-5">Make up, visage</li>
-          </ul>
-          <button onclick="window.location.href = '#'" class="price__section-button ">Order shooting</button>
-        </div>
-        <div class="price__section-item">
-          <h2 class="price__section-titel price__section-titel-gold">Gold</h2>
-          <span class="price__section-price">1000 $</span>
-          <ul class="price__section-list">
-            <li class="language-price-description-3-span-1">Three locations or more</li>
-            <li class="language-price-description-3-span-2">300 photos in color</li>
-            <li class="language-price-description-3-span-3">50 photos in retouch</li>
-            <li class="language-price-description-3-span-4">Readiness 1 week</li>
-            <li class="language-price-description-3-span-5">Make up, visage, hairstyle</li>
-          </ul>
-          <button onclick="window.location.href = '#'" class="price__section-button  language-order">Order
-            shooting</button>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contacts" class="contacts">
-      <div class="container">
-        <div class="contacts__container">
-          <form action="index.html#" method="get" class="form">
-            <h2 class="section__title contact-me__section-titel form__title language-contact-me">Contact me</h2>
-            <input type="email" name="e-mail" placeholder="E-mail" class="form__input language-mail" required>
-            <input type="tel" name="phone" placeholder="Phone" class="form__input language-phone" required>
-            <textarea name="message" placeholder="Message" class="form__input textarea" required></textarea>
-            <button class=" contact-me__section-button language-send-message" type="submit" name="send-message">Send
-              message</button>
-          </form>
-        </div>
-      </div>
-    </section>
+      <section class="contacts">
+        <form class="contact-me__section-inputform-wrapper">
+          <h2 class="contact-me__section-titel language-contacts language-contact-me" id="contacts">Contact me</h2>
+
+          <label>
+            <input type="email" class="contact-me__section-input language-mail" name="email" placeholder="E-mail"
+              required>
+          </label>
+          <label>
+            <input type="tel" class="contact-me__section-input language-phone" name="telephone" placeholder="Phone"
+              required>
+          </label>
+          <label>
+            <textarea class="contact-me__section-input contact-me__section-input-text " name="message"
+              placeholder="Message" required></textarea>
+          </label>
+          <button class="button contact-me__section-button language-send-message " type="submit">
+            Send message
+          </button>
+        </form>
+      </section>
     </div>
   </main>
 
@@ -271,6 +322,7 @@
 
 
   <script type='module' src="/src/js/script.js"></script>
+  </script>
 </body>
 
 </html>
