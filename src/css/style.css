@@ -1542,11 +1542,11 @@ input[type="range"]::-webkit-slider-thumb {
   @media (max-width: 460px) {
     .header__container{
     background-size: auto 640px;
-      background-position: -311px 36px;
+      background-position: -311px 0px;
     }
     .header__container.theme-light {
     background-size: auto 640px;
-      background-position: -311px 36px;
+      background-position: -311px 0px;
     }
     .header__hero-text{
       padding-bottom: 20px;
