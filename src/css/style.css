@@ -1212,13 +1212,12 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
     flex-wrap: wrap;
     margin-left: 162px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     flex-direction: row;
     flex-wrap: wrap;
   }
-
-  .header__hero-button {
-    margin-bottom: 5px;
+  .button-black{
+  padding: 0px 72px 0px 69px;
   }
 
   .portfolio__section-imgs {
