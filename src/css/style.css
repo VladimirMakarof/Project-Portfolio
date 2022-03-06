@@ -554,7 +554,7 @@ body {
 
 /* -- Video Section -- */
 .video {
-  padding-top: 163px;
+  padding-top: 100px;
 }
 
 .video__player {
@@ -822,7 +822,7 @@ input[type="range"]::-webkit-slider-thumb {
 } */
 
 .price {
-  padding-top: 100px;
+  padding-top: 80px;
   text-align: center;
   background-color: var(--primary-1);
 }
