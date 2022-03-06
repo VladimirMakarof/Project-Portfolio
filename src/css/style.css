@@ -1496,6 +1496,11 @@ input[type="range"]::-webkit-slider-thumb {
       background-size: auto 620px;
       background-repeat: no-repeat;
     }
+    .header__container.theme-light{
+    background-position: -180px -120px;
+      background-size: auto 620px;
+      background-repeat: no-repeat;
+    }
   }
 
   @media (max-width: 460px) {
@@ -1536,6 +1541,10 @@ input[type="range"]::-webkit-slider-thumb {
   }
   @media (max-width: 460px) {
     .header__container{
+    background-size: auto 640px;
+      background-position: -311px 36px;
+    }
+    .header__container.theme-light {
     background-size: auto 640px;
       background-position: -311px 36px;
     }
