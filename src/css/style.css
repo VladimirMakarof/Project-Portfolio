@@ -1475,6 +1475,10 @@ input[type="range"]::-webkit-slider-thumb {
     .portfolio__section-buttons {
       margin: 0 auto;
     }
+    .portfolio{
+      padding-left: 20px;
+    padding-right: 20px;
+    }
   }
 
   @media (max-width: 620px) {
@@ -1529,5 +1533,17 @@ input[type="range"]::-webkit-slider-thumb {
     .contacts {
       padding: 0 20px;
     }
+  }
+  @media (max-width: 460px) {
+    .header__container{
+    background-size: auto 640px;
+      background-position: -311px 36px;
+    }
+    .header__hero-text{
+      padding-bottom: 20px;
+    }
+    .section-title::after, .section-title::before {
+    width: 50px;
+}
   }
 }
