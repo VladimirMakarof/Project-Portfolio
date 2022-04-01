@@ -1,6 +1,6 @@
 # portfolio
 
-Выполненную работу можно увидеть [тут](https://vladimirmakarof.github.io/portfolio/).
+Выполненную работу можно увидеть [здесь](https://vladimirmakarof.github.io/Project-Portfolio/).
 
 
 ## Описание проекта
